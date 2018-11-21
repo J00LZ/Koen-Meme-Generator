@@ -10,11 +10,6 @@ var topText = document.getElementById('top-text');
 var bottomText = document.getElementById('bottom-text');
 
 
-// When the image has loaded...
-img.onload = function () {
-    drawMeme()
-}
-
 topText.addEventListener('keydown', drawMeme)
 topText.addEventListener('keyup', drawMeme)
 topText.addEventListener('change', drawMeme)
@@ -77,3 +72,6 @@ function wrapText(context, text, x, y, maxWidth, lineHeight, fromBottom) {
 
 
 }
+
+// Once script is loaded
+drawMeme()
